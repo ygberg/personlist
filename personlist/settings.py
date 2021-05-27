@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'personlist.urls'
+ROOT_URLCONF = 'persondb.urls'
 
 TEMPLATES = [
     {

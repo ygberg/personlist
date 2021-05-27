@@ -1,9 +1,12 @@
 from django.shortcuts import render
-from persondb.models import Person
+from .models import Person
 # Create your views here.
 
-def persons(request,**Kwargs):
 
-    my_persons = Person.obejcts.all()
-    return render(request,persons.html,context=my_persons)
+def index(request):
+    return render(request,'index.html',{})
+
+def persons(request):
+    my_persons = Person.objects.all()
+    return render(request,'persons.html',{'my_persons':my_persons})
 
